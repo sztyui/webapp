@@ -39,7 +39,7 @@ func main() {
 	port := os.Getenv("WEBSERVER_PORT")
 
 	if len(username) == 0 || len(password) == 0 {
-		log.Fatal("Please set the following environment variables: MONGODB_USERNAME, MONGODB_PASSWORD")
+		log.Fatal("Please set the following environment variables: MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_DBNAME, WEBSERVER_PORT")
 	}
 
 	// Connecting to the good, old mongodb :)

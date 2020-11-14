@@ -76,6 +76,8 @@ github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UV
 github.com/stretchr/testify v1.6.1 h1:hDPOHmpOpP40lSULcqw7IrRb/u7w6RpDC9399XyoNd0=
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/sztyui/simple_webserver v0.0.0-20201114203459-63dc0b3498de h1:66zOphIdCYpXAX1ih+jjVrFvgQnizvd1ONJoyvJaKdQ=
+github.com/sztyui/webapp v0.0.0-20201114213653-3603006b0118 h1:dl0w43/6ZfQJG58Lq0R1rsMqk6fhD8afmP6/2axgBug=
+github.com/sztyui/webapp v0.0.0-20201114213653-3603006b0118/go.mod h1:OhYc0hCyLk+GjoM1R0sA41F/qLHlWmGOD3oradDPmRM=
 github.com/tidwall/pretty v1.0.0 h1:HsD+QiTn7sK6flMKIvNmpqz1qrpP3Ps6jOKIKMooyg4=
 github.com/tidwall/pretty v1.0.0/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
 github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c h1:u40Z8hqBAAQyv+vATcGgV0YCnDjqSL7/q/JyPhhJSPk=

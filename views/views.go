@@ -56,6 +56,7 @@ func ReturnAllArticles(w http.ResponseWriter, r *http.Request) {
 func ReturnSingleArticle(w http.ResponseWriter, r *http.Request) {
 	key := mux.Vars(r)["id"]
 	var locArticle models.Article
+	w.Header().Set("content-type", "application/json")
 
 	db := dbengine.Client.Database(dbName)
 	articleCollection := db.Collection(collectionName)
@@ -71,6 +72,7 @@ func ReturnSingleArticle(w http.ResponseWriter, r *http.Request) {
 
 // CreateNewArticle for creating new articles
 func CreateNewArticle(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
 	reqBody, _ := ioutil.ReadAll(r.Body)
 	var article models.Article
 	json.Unmarshal(reqBody, &article)
@@ -91,6 +93,7 @@ func CreateNewArticle(w http.ResponseWriter, r *http.Request) {
 
 // DeleteArticle for deleting articles
 func DeleteArticle(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
 	key := mux.Vars(r)["id"]
 	db := dbengine.Client.Database(dbName)
 	articleCollection := db.Collection(collectionName)
@@ -101,6 +104,7 @@ func DeleteArticle(w http.ResponseWriter, r *http.Request) {
 
 // UpdateArticle helps updating articles by id
 func UpdateArticle(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
 	fmt.Println("UpdateArticle endpoint HIT")
 	key := mux.Vars(r)["id"]
 	reqBody, err := ioutil.ReadAll(r.Body)
